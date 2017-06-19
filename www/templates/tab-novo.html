@@ -1,0 +1,39 @@
+<ion-view view-title="Novo">
+  <ion-content class="padding">
+    <form name="novoForm" ng-submit="novoRemedio(novo)">
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Nome do Remédio</span>
+          <input type="text" placeholder="Pirula azul" name="nome" ng-model="novo.nome">
+        </label>
+        <label class="item item-input item-select">
+            <div class="input-label">
+              Hora Inicio
+            </div>
+            <select name="hora_inicio" ng-model="novo.hora_inicio">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+          </label>
+
+          <label class="item item-input item-select">
+            <div class="input-label">
+              Intervalo
+            </div>
+            <select name="intervalo" ng-model="novo.intervalo">
+              <option value="1">1 em 1 hora</option>
+              <option value="2">2 em 2 horas</option>
+              <option value="3">3 em 3 horas</option>
+            </select>
+          </label>
+      </div>
+      <button type="submit" class="button button-block button-positive activated">Cadastrar</button>
+    </form>
+  </ion-content>
+</ion-view>

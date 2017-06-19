@@ -1,0 +1,16 @@
+<ion-view view-title="Remédios" ng-init="remediosLista()">
+  <ion-content>
+    <ion-list>
+      <!-- href="#/tab/chats/{{chat.id}}" -->
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="r in remedios" type="item-text-wrap" >
+        <img ng-src="http://lorempixel.com/130/130/">
+        <h2>{{r.nome}}</h2>
+        <p>Inicio: {{r.hora_inicio}} / Intervalo: {{r.intervalo}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        <ion-option-button class="button-assertive" ng-click="remove(r)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
